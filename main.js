@@ -1,6 +1,6 @@
     // Your Coinlayer API credentials
     let endpoint = 'live';
-    let access_key = '048319e7b5f6594e3657d4570a600b8f';
+    let access_key = '46ac6145823187ccb701cb1763e43d08';
 
     // Function to make the API request and update the HTML
     function get_live(figureId) {
@@ -141,7 +141,7 @@
 
         if (fromCurrency && toCurrency && !isNaN(amount) && amount > 0) {
             // Your Coinlayer API access key
-            let accessKey = '048319e7b5f6594e3657d4570a600b8f';
+            let accessKey = '46ac6145823187ccb701cb1763e43d08';
 
             // Make the API request for currency conversion
             let apiUrl = `https://api.coinlayer.com/convert?access_key=${accessKey}&from=${fromCurrency}&to=${toCurrency}&amount=${amount}`;
