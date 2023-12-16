@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Cryptolator</title>
+</head>
+<body>
+<div class="greeter">
+    <div class="header-block">
+        <h1 class="hello">Cryptolator</h1>
+        <h3 class="statement">Pounce on opportunities with Cryptolator</h3>
+    </div>
+</div>
+<div class="container">
+
+<!-- complete list of live cryptos -->
+<div class="live-head">
+    <h2>All Crypto Currencies and Rates</h2>
+</div>
+    <div class="live-date-container">
+        <figure class="livedata-table" id="fig1" >
+            <!-- live data table will go here. hopefully with a scroll bar -->
+        </figure>
+
+    </div>
+
+
+
+<!-- area to get the value of a past date -->
+<div class="past_value_header">
+            <h2>Past values</h2>
+        </div>
+    <div class="past_value_contianer">
+         
+        
+        <figure class="past_value_table">
+            <table >
+
+            </table>
+            <!-- table where the past value of a crypto will be displayed after a date YYYY-MM-DD is given -->
+        </figure>
+
+   
+
+        <div>
+            <label for="cryptoName">Name of Crypto:</label>
+            <input type="text" id="cryptoName" placeholder="Enter the name of the cryptocurrency">
+        </div>
+    
+        <div>
+            <label for="desiredDate">Desired Date (YYYY-MM-DD):</label>
+            <input type="text" id="desiredDate" placeholder="Enter the desired date (YYYY-MM-DD)">
+        </div>
+        <div class="button_holder">
+                <button class="add_date" id = "fig5" onclick="event.stopPropagation();past_value(this.id,event)">Submit</button>     
+        </div>
+       
+    </div>
+
+ <!-- place to convert cryptos--> 
+    
+   <div class="convert_title">
+    <h2>Currency Converter</h2>
+   </div>
+    <div class="convert_header">
+    <figure class="conversion_table">
+        <table id="Conv_table">
+            <!-- where the conversion will be displayed -->
+        </table>
+        
+    </figure>
+    <div>
+        <label for="fromCurrency">From Currency:</label>
+        <input type="text" id="fromCurrency" placeholder="Enter currency code (e.g., BTC)">
+    </div>
+    
+    <div>
+        <label for="toCurrency">To Currency:</label>
+        <input type="text" id="toCurrency" placeholder="Enter currency code (e.g., ETH)">
+    </div>
+    
+    <div>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+    </div>
+    
+    <div>
+        <button onclick="convertCurrency()">Convert</button>
+    </div>
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>

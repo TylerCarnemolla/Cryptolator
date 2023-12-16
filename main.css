@@ -1,0 +1,155 @@
+.livedata-table {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Set the desired height for the scrollable area */
+    overflow: hidden;
+    
+}
+
+.crypto-list-container {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    
+}
+
+/* Add styling for the scrollbar if needed */
+.crypto-list-container::-webkit-scrollbar {
+    width: 10px;
+    
+    
+}
+
+.crypto-list-container::-webkit-scrollbar-thumb {
+    background-color: #dddada;
+    border-radius: 5px;
+}
+
+.crypto-list-container::-webkit-scrollbar-track {
+    background-color: #c0bdbd;
+}
+
+/* new stuff */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(12, 12, 12, 0.199)
+}
+
+.greeter {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-block {
+    margin: 20px 0;
+}
+
+.hello {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.statement {
+    font-size: 1.2em;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.live-date-container,
+.past_value_contianer,
+.convert_header,
+.conversion_table {
+    margin:30px;
+}
+
+.live-date-container,
+.past_value_contianer,
+.convert_header {
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    
+}
+
+.past_value_table,
+.conversion_table {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button{
+    padding:10px;
+    background-color: #3498db;
+    border-radius: 5px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+
+.convert_header,
+.favorite_list_container h2,
+.past_value_header h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.past_value_header{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.button_holder{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.livedata-table {
+    max-height: 200px; /* Set a maximum height for the scrollable area */
+    overflow: auto; /* Enable scrolling if the content exceeds the max height */
+}
+
+.livedata-table{
+    max-height: 200px; /* Set a maximum height for the scrollable area */
+    overflow: auto; /* Enable scrolling if the content exceeds the max height */
+}
+.live-head{
+    display: flex;
+    justify-content: center;
+}
+.convert_title{
+    display: flex;
+    justify-content: center;
+}
